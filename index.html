@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" media="screen,projection" />
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="css/mystyle.css">
+</head>
+
+<body>
+
+    <div id="main" class="container">
+
+        <h4>Frame Rate Calculator</h4>
+        <h6>A simple to use calculator for calculating the distance between frames</h6>
+
+        <br>
+        <div class="divider"></div>
+        <br>
+
+        <div class="grey lighten-5 card" style="padding: 15px;">
+            <span class="flow-text" style="padding-left: 10.5px; padding-right: 10.5px;">Frame Rate To Time</span>
+            <div class="row" style="margin-bottom: 0px;">
+                <div class="input-field col s6">
+                    <input id="input_framerate" type="number" v-model="inputFrame" class="validate">
+                    <label for="input_framerate">Frame Rate of Video</label>
+                </div>
+            </div>
+            <div class="row" style="margin-bottom: 0px;">
+                <div class="input-field col s6">
+                    <input id="frame_rate_length" type="number" v-model="framesMeasure" class="validate">
+                    <label for="frame_rate_length">How Many Frames Long?</label>
+                </div>
+            </div>
+            <blockquote class="flow-text valign-wrapper" style="padding-left: 10.5px; padding-right: 10.5px;"><span v-html="timeLong"></span></blockquote>
+        </div>
+
+    </div>
+
+    <!-- development version, includes helpful console warnings -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <!--JavaScript at end of body for optimized loading-->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <!-- development version, of jquery -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <!-- Add in the custom js -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
