@@ -27,7 +27,7 @@ var main = new Vue({
         totalFramesInVideo: function() {
             var total = (this.totalFrames / this.videoLength);
             var html_return_fps;
-            if (total == 0) {
+            if (isNaN(total) || total == 0) {
                 html_return_fps = `Waiting for Inputs...`;
             } else {
                 html_return_fps = `<small>${this.totalFrames} frames over ${this.videoLength}s is </small><strong class="blue-text" style="text-decoration: underline;">${total}fps</strong><small></small>`;
