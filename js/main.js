@@ -30,7 +30,7 @@ var main = new Vue({
             if (isNaN(total) || total == 0) {
                 html_return_fps = `Waiting for Inputs...`;
             } else {
-                html_return_fps = `<small>${this.totalFrames} frames over ${this.videoLength}s is </small><strong class="blue-text" style="text-decoration: underline;">${total}fps</strong><small></small>`;
+                html_return_fps = `<small>${this.totalFrames} frames over ${this.videoLength}s is </small><strong class="blue-text" style="text-decoration: underline;">${total}</strong><small>fps</small>`;
             }
             return html_return_fps;
         },
